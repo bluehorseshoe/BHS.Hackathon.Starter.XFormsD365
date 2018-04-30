@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BHS.Hackathon.Starter.XFormsD365.Pages.SettingsPage">
+    <ContentPage.Padding x:TypeArguments="Thickness">
+        20,20,20,20
+    </ContentPage.Padding>
+
+    <ContentPage.Content>
+
+        <ScrollView>
+
+            <StackLayout CompressedLayout.IsHeadless="true">
+
+                <StackLayout>
+                    <Label Text="D365 URL"></Label>
+                    <StackLayout>
+
+                        <StackLayout.BackgroundColor>
+                            <OnPlatform x:TypeArguments="Color">
+                                <On Platform="Android, UWP" Value="#183c57" />
+                            </OnPlatform>
+                        </StackLayout.BackgroundColor>
+
+                        <StackLayout.Padding>
+                            <OnPlatform x:TypeArguments="Thickness">
+                                <On Platform="Android, UWP" Value="1" />
+                            </OnPlatform>
+                        </StackLayout.Padding>
+
+                        <Entry x:Name="D365URL" BackgroundColor="White">
+                            <Entry.Keyboard>
+                                <Keyboard x:FactoryMethod="Create">
+                                    <x:Arguments>
+                                        <KeyboardFlags>None</KeyboardFlags>
+                                    </x:Arguments>
+                                </Keyboard>
+                            </Entry.Keyboard>
+                        </Entry>
+                    </StackLayout>
+                </StackLayout>
+
+                <StackLayout>
+                    <Label Text="Azure AD ClientId"></Label>
+                    <StackLayout>
+
+                        <StackLayout.BackgroundColor>
+                            <OnPlatform x:TypeArguments="Color">
+                                <On Platform="Android, UWP" Value="#183c57" />
+                            </OnPlatform>
+                        </StackLayout.BackgroundColor>
+
+                        <StackLayout.Padding>
+                            <OnPlatform x:TypeArguments="Thickness">
+                                <On Platform="Android, UWP" Value="1" />
+                            </OnPlatform>
+                        </StackLayout.Padding>
+
+                        <Entry x:Name="AzureADClientId" BackgroundColor="White">
+                            <Entry.Keyboard>
+                                <Keyboard x:FactoryMethod="Create">
+                                    <x:Arguments>
+                                        <KeyboardFlags>None</KeyboardFlags>
+                                    </x:Arguments>
+                                </Keyboard>
+                            </Entry.Keyboard>
+                        </Entry>
+                    </StackLayout>
+                </StackLayout>
+
+                <StackLayout>
+                    <Label Text="Azure AD Authority"></Label>
+                    <StackLayout>
+
+                        <StackLayout.BackgroundColor>
+                            <OnPlatform x:TypeArguments="Color">
+                                <On Platform="Android, UWP" Value="#183c57" />
+                            </OnPlatform>
+                        </StackLayout.BackgroundColor>
+
+                        <StackLayout.Padding>
+                            <OnPlatform x:TypeArguments="Thickness">
+                                <On Platform="Android, UWP" Value="1" />
+                            </OnPlatform>
+                        </StackLayout.Padding>
+
+                        <Entry x:Name="AzureADAuthority" BackgroundColor="White">
+                            <Entry.Keyboard>
+                                <Keyboard x:FactoryMethod="Create">
+                                    <x:Arguments>
+                                        <KeyboardFlags>None</KeyboardFlags>
+                                    </x:Arguments>
+                                </Keyboard>
+                            </Entry.Keyboard>
+                        </Entry>
+                    </StackLayout>
+                </StackLayout>
+
+                <StackLayout>
+                    <Label Text="Azure AD Return URL"></Label>
+                    <StackLayout>
+
+                        <StackLayout.BackgroundColor>
+                            <OnPlatform x:TypeArguments="Color">
+                                <On Platform="Android, UWP" Value="#183c57" />
+                            </OnPlatform>
+                        </StackLayout.BackgroundColor>
+
+                        <StackLayout.Padding>
+                            <OnPlatform x:TypeArguments="Thickness">
+                                <On Platform="Android, UWP" Value="1" />
+                            </OnPlatform>
+                        </StackLayout.Padding>
+
+                        <Entry x:Name="AzureADReturnURL" BackgroundColor="White">
+                            <Entry.Keyboard>
+                                <Keyboard x:FactoryMethod="Create">
+                                    <x:Arguments>
+                                        <KeyboardFlags>None</KeyboardFlags>
+                                    </x:Arguments>
+                                </Keyboard>
+                            </Entry.Keyboard>
+                        </Entry>
+                    </StackLayout>
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
