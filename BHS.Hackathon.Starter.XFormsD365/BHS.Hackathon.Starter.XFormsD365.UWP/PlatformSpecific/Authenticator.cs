@@ -1,15 +1,15 @@
-﻿using Microsoft.IdentityModel.Clients.ActiveDirectory;
+﻿using BHS.Hackathon.Starter.XFormsD365.Helpers;
+using BHS.Hackathon.Starter.XFormsD365.Interfaces;
+using BHS.Hackathon.Starter.XFormsD365.Models;
+using Microsoft.IdentityModel.Clients.ActiveDirectory;
 using System;
 using System.Threading.Tasks;
 using Xamarin.Forms;
-using BHS.Hackathon.Starter.XFormsD365.Helpers;
-using BHS.Hackathon.Starter.XFormsD365.Interfaces;
-using BHS.Hackathon.Starter.XFormsD365.Models;
-using BHS.Hackathon.Starter.XFormsD365.UWP.PlatformSpecific;
+using XFormsD365.UWP.PlatformSpecific;
 
 [assembly: Dependency(typeof(Authenticator))]
 
-namespace BHS.Hackathon.Starter.XFormsD365.UWP.PlatformSpecific
+namespace XFormsD365.UWP.PlatformSpecific
 {
     /// <summary>
     /// UWP Authenticator.
